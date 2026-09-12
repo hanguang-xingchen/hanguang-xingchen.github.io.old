@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BBS 暂停维护公告</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <style>
+        .notice-page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .notice-icon {
+            font-size: 3rem;
+            margin-bottom: 24px;
+            color: var(--pink-400);
+        }
+        .notice-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+        }
+        .notice-body {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            max-width: 520px;
+            margin-bottom: 32px;
+        }
+        .notice-body strong {
+            color: var(--pink-600);
+        }
+        .notice-redirect {
+            font-size: 0.8rem;
+            color: var(--text-tertiary);
+            margin-top: 16px;
+        }
+        .notice-redirect a {
+            color: var(--pink-500);
+            text-decoration: none;
+        }
+        .notice-redirect a:hover {
+            text-decoration: underline;
+        }
+        .btn-back {
+            display: inline-block;
+            padding: 12px 28px;
+            background: linear-gradient(135deg, var(--pink-400), var(--pink-500));
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border-radius: 999px;
+            box-shadow: 0 4px 16px rgba(236, 72, 153, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .btn-back:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 24px rgba(236, 72, 153, 0.45);
+        }
+    </style>
+    <meta http-equiv="refresh" content="8;url=https://hanguangxingchen.github.io/" />
+</head>
+<body>
+    <div class="notice-page">
+        <div class="notice-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:64px;height:64px">
+                <path d="M12 9v4m0 4h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="notice-title">BBS 论坛无限期暂停维护</div>
+        <div class="notice-body">
+            <p><strong>bbs.hanguangxingchen.cyou</strong> 自即日起无限期暂停维护。</p>
+            <p>论坛内容不再更新，感谢各位曾经到访的朋友。</p>
+            <p>本页将在数秒后自动跳转至主页。</p>
+        </div>
+        <a class="btn-back" href="https://hanguangxingchen.github.io/">前往主页</a>
+        <div class="notice-redirect">
+            未自动跳转？<a href="https://hanguangxingchen.github.io/">点击这里</a>
+        </div>
+    </div>
+</body>
+</html>

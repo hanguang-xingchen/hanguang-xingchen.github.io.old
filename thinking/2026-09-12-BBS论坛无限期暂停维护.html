@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BBS 论坛无限期暂停维护</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <style>
+        .notice-container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 60px 40px;
+        }
+        .notice-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 24px;
+            border: 3px solid var(--pink-200);
+        }
+        .notice-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--pink-600);
+            margin-bottom: 8px;
+            text-align: center;
+        }
+        .notice-date {
+            font-size: 0.8rem;
+            color: var(--text-tertiary);
+            margin-bottom: 32px;
+            text-align: center;
+        }
+        .notice-body p {
+            margin: 12px 0;
+            line-height: 1.8;
+            color: var(--text-primary);
+        }
+        .notice-body strong {
+            color: var(--pink-600);
+        }
+        .notice-body h2 {
+            font-size: 1.2rem;
+            margin: 32px 0 12px;
+            color: var(--pink-500);
+            border-bottom: 1px solid var(--pink-200);
+            padding-bottom: 4px;
+        }
+        .notice-body ul {
+            margin: 12px 0;
+            padding-left: 24px;
+        }
+        .notice-body li {
+            margin: 4px 0;
+            line-height: 1.7;
+            color: var(--text-secondary);
+        }
+        .notice-screenshot {
+            max-width: 400px;
+            width: 100%;
+            border-radius: 8px;
+            margin: 24px auto;
+            display: block;
+            border: 1px solid var(--pink-200);
+        }
+        .notice-quote {
+            background: var(--pink-50);
+            border-left: 3px solid var(--pink-300);
+            padding: 12px 16px;
+            margin: 16px 0;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+        .contact-links {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+        .contact-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, var(--pink-400), var(--pink-500));
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border-radius: 999px;
+            box-shadow: 0 4px 16px rgba(236, 72, 153, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .contact-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 24px rgba(236, 72, 153, 0.45);
+        }
+        @media (max-width: 480px) {
+            .contact-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            .contact-link {
+                width: 100%;
+                max-width: 280px;
+                justify-content: center;
+            }
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 40px;
+            color: var(--pink-500);
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="notice-container">
+        <img class="notice-avatar" src="/thinking/img/2026-9-12-论坛头像.jpg" alt="论坛头像" />
+        <div class="notice-title">BBS 论坛无限期暂停维护</div>
+        <div class="notice-date">2026-09-12</div>
+
+        <div class="notice-body">
+            <p>自 <strong>2026 年 9 月 7 日 0 时</strong>起，<strong>bbs.hanguangxingchen.cyou</strong> 及其附属服务无限期中止维护。</p>
+
+            <h2>致谢</h2>
+            <p>从开服到停摆，整整 <strong>40 天</strong>。感谢每一位到访的朋友，感谢每一次发帖、每一条回复、每一个深夜的讨论。</p>
+
+            <div class="notice-quote">
+                没有惊天动地的别离，只有细水长流的陪伴与回忆。这 39 天里，每一次发帖、每一条回复、每一个深夜的讨论，都如同点点星光，汇聚成我们共同的记忆银河。
+            </div>
+
+            <h2>最后的合影</h2>
+            <p>论坛关闭前，我们留下了一张最后的截图。虽然只有两个人参与"合影"，但这份真诚而相守的情谊，早已在彼此心中留下了不可磨灭的印记。</p>
+            <img class="notice-screenshot" src="/thinking/img/2026-9-12-论坛最后一张截图.jpg" alt="论坛最后一张截图" />
+
+            <h2>后续</h2>
+            <ul>
+                <li>论坛不再接受新注册、新帖子</li>
+                <li>服务器镜像将长期保存，静待时机</li>
+                <li>原论坛服务器域名将重定向到此页</li>
+            </ul>
+
+            <h2>继续交流</h2>
+            <p>论坛虽已暂停，但我们的连接不会断。欢迎大家通过以下方式继续互动：</p>
+
+            <div class="contact-links">
+                <a class="contact-link" href="https://qm.qq.com/q/MCN6tLzCoy" target="_blank">
+                    <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 13.27c-.33.55-.79 1.05-1.33 1.45.13.27.27.58.36.89.09.31.11.55.04.72-.07.17-.23.28-.47.34-.24.06-.51.03-.8-.08-.29-.11-.55-.28-.79-.49-.24.02-.49.03-.74.03s-.5-.01-.74-.03c-.24.21-.5.38-.79.49-.29.11-.56.14-.8.08-.24-.06-.4-.17-.47-.34-.07-.17-.05-.41.04-.72.09-.31.23-.62.36-.89-.54-.4-1-0.9-1.33-1.45-.33-.55-.5-1.12-.5-1.72 0-.73.23-1.4.63-1.95.4-.55.93-.96 1.53-1.18.07-.62.29-1.17.63-1.57.34-.4.78-.65 1.27-.72.07-.39.23-.73.46-1 .23-.27.53-.45.87-.52.16-.03.33-.05.5-.05s.34.02.5.05c.34.07.64.25.87.52.23.27.39.61.46 1 .49.07.93.32 1.27.72.34.4.56.95.63 1.57.6.22 1.13.63 1.53 1.18.4.55.63 1.22.63 1.95 0 .6-.17 1.17-.5 1.72z"/></svg>
+                    QQ 群
+                </a>
+                <a class="contact-link" href="https://github.com/hanguang-xingchen" target="_blank">
+                    <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    GitHub
+                </a>
+            </div>
+        </div>
+
+        <a class="back-link" href="/thinking/">← 返回 Thinking 列表</a>
+    </div>
+</body>
+</html>
